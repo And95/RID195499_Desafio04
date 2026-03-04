@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { GlobalStyle } from './styles/'
-import App from './App.jsx'
+import App from './App'
 
 const container = document.getElementById('root')
 

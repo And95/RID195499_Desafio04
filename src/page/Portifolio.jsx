@@ -1,16 +1,9 @@
-import { Header, Hero, Projects, About, Footer } from '@/components'
+import { Header, Hero, Projects, About, Footer } from '../components'
 
-function Portifolio() {
-
+export function Portifolio() {
     return (
         <>
           <Header />
-          <Hero />
-          <Projects />
-          <About />
-          <Footer />
         </>
     )
 }
-
-export default Portifolio
