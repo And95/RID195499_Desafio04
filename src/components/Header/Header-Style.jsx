@@ -12,25 +12,8 @@ export const HeaderContainer = styled.header`
   margin: 0 auto;
 `;
 
-export const NavList = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: ${pxToRem(48)};
-  list-style: none;
-`;
-
-export const IconsList = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: ${pxToRem(20)};
-  list-style: none;
-`;
-
 export const NavLink = styled.a`
-  text-decoration: none;
-  color: inherit;
   font-weight: 500;
-
   transition: opacity 0.2s ease;
 
   &:hover {

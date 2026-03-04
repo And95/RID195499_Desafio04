@@ -1,0 +1,22 @@
+import styled from "styled-components";
+
+import { pxToRem } from "../../utils/pxToRem";
+
+export const FooterContainer = styled.footer`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: ${pxToRem(24)} ${pxToRem(60)};
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+
+export const NavLink = styled.a`
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;

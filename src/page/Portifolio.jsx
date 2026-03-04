@@ -4,6 +4,7 @@ export function Portifolio() {
     return (
         <>
           <Header />
+          <Footer />
         </>
     )
 }

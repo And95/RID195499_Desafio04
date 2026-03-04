@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ul {
-        list-style-type: none;
+        list-style: none;
     }
 
     li a {
@@ -25,24 +25,8 @@ export const GlobalStyle = createGlobalStyle`
         color: inherit;
     }
 
-    .flex {
+    .flex-center {
         display: flex;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .sp-between {
-        justify-content: space-between;
-    }
-
-    .mb-1 {
-        margin-bottom: ${pxToRem(16)};
-    }
-
-    .mb-2 {
-        margin-bottom: ${pxToRem(32)};
+        align-items: center;
     }
 `
