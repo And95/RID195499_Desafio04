@@ -29,8 +29,8 @@ export function Footer(){
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/andregonzaga95" target="_blank" rel="noopener noreferrer">
-                <img src={Figma} alt="LinkedIn" />
+                <a href="https://www.figma.com/@And95" target="_blank" rel="noopener noreferrer">
+                <img src={Figma} alt="Figma" />
                 </a>
             </li>
         </ul>
