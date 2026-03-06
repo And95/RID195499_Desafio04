@@ -15,6 +15,7 @@ export const HeroContainer = styled.section`
 
 export const Paragraph = styled.p`
   max-width: 41ch; 
+  margin-left: ${pxToRem(16)};
   width: 100%;
   line-height: 1.5;
 `;

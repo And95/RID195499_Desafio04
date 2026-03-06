@@ -5,6 +5,7 @@ export const Button = styled.button`
   padding: ${pxToRem(14)} ${pxToRem(32)};
   border: none;
   border-radius: 999px;
+  margin-left: ${pxToRem(32)};
   font-size: ${pxToRem(18)};
   font-weight: 600;
   color: #fff;
@@ -30,6 +31,7 @@ export const Button = styled.button`
   }
 
   &:small {
+    margin-left: 0px;
     padding: ${pxToRem(10)} ${pxToRem(24)};
   }
 `;
