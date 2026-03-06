@@ -1,13 +1,21 @@
 
-import { HeroContainer, Paragraph } from "./Hero-Style"
+import { HeroContainer, Paragraph, Title, Name, Role } from "./Hero-Style"
 import { Button } from "../Style-Button"
 
 export function Hero(){
     return(
         <HeroContainer>
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Paragraph>
-            <Button>Saiba Mais</Button>
+            <Title> Olá, eu sou <Name>André Gonzaga</Name>
+            <br />
+            <Role>Engenheiro de Software</Role>
+      </Title>
+            <Paragraph>Desenvolvedor Full-stack focado em criar aplicações web modernas,
+                       performáticas e escaláveis utilizando React, TypeScript e Node.js.</Paragraph>
+            <Button as="a"
+                    href="https://templateforcurriculumbyandregonzaga.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer">Saiba Mais
+            </Button>
         </HeroContainer>
     )
 }

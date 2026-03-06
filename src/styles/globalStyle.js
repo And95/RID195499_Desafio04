@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        font-size: ${pxToRem(16)};
     }
 
     h1, h2, ul, li, p, a {
@@ -20,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
     }
 
-    li a {
+    a {
         text-decoration: none;
         color: inherit;
     }

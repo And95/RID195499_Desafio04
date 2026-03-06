@@ -6,7 +6,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 999px;
   margin-left: ${pxToRem(32)};
-  font-size: ${pxToRem(18)};
+  font-size: ${pxToRem(24)};
   font-weight: 600;
   color: #fff;
   width: fit-content;
@@ -32,6 +32,7 @@ export const Button = styled.button`
 
   &:small {
     margin-left: 0px;
+    font-size: ${pxToRem(16)};
     padding: ${pxToRem(10)} ${pxToRem(24)};
   }
 `;

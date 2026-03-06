@@ -8,11 +8,14 @@ export const FooterContainer = styled.footer`
   align-items: center;
 
   padding: ${pxToRem(24)} ${pxToRem(60)};
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 90%;
+  margin: ${pxToRem(24)} auto;
+
+  font-size: ${pxToRem(20)}
 `;
 
 export const NavLink = styled.a`
+font-size: ${pxToRem(22)};
   font-weight: 500;
   transition: opacity 0.2s ease;
 

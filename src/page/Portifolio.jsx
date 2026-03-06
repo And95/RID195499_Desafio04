@@ -5,6 +5,7 @@ export function Portifolio() {
         <>
           <Header />
           <Hero />
+          <About />
           <Footer />
         </>
     )

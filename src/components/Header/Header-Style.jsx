@@ -7,9 +7,11 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  padding: ${pxToRem(24)} ${pxToRem(60)};
-  max-width: 1200px;
+  padding: ${pxToRem(24)} ${pxToRem(100)};
+  max-width: 100%;
   margin: 0 auto;
+
+  font-size: ${pxToRem(24)}
 `;
 
 export const NavLink = styled.a`
