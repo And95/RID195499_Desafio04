@@ -5,25 +5,29 @@ import { pxToRem } from "../../utils/pxToRem";
 export const Section = styled.section`
   background: #0b1728;
   padding: ${pxToRem(60)} ${pxToRem(80)};
+  margin: ${pxToRem(60)} auto;
 `;
 
 export const Title = styled.h2`
-  color: white;
-  font-size: ${pxToRem(32)};
-  margin-bottom: ${pxToRem(40)};
+  font-size: ${pxToRem(56)};
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: ${pxToRem(60)};
 `;
 
 export const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(${pxToRem(320)}, 1fr));
-  gap: ${pxToRem(40)};
+  gap: ${pxToRem(80)};
+  margin-left: ${pxToRem(24)};
 `;
 
 export const Card = styled.div`
   background: #0f1c2e;
   border-radius: ${pxToRem(20)};
   padding: ${pxToRem(20)};
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 3px solid rgba(137, 137, 137, 0.97);
+  border-radius: ${pxToRem(20)} ${pxToRem(0)} ${pxToRem(20)} ${pxToRem(0)};
 
   box-shadow: 0 ${pxToRem(10)} ${pxToRem(30)} rgba(0, 0, 0, 0.6);
 
