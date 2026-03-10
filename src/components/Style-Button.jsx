@@ -12,11 +12,7 @@ export const Button = styled.button`
   width: fit-content;
   cursor: pointer;
 
-  background: linear-gradient(
-    90deg,
-    #8a5cff 0%,
-    #3bd1ff 100%
-  );
+  background: linear-gradient(90deg, #8a5cff 0%, #3bd1ff 100%);
 
   transition: all 0.3s ease;
 
@@ -30,8 +26,8 @@ export const Button = styled.button`
     filter: brightness(0.95);
   }
 
-  &:small {
-    margin-left: 0px;
+  &.small {
+    margin-left: 0;
     font-size: ${pxToRem(16)};
     padding: ${pxToRem(10)} ${pxToRem(24)};
   }
