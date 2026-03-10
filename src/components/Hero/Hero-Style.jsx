@@ -14,7 +14,7 @@ export const HeroContainer = styled.section`
   background-position: center;
   background-repeat: no-repeat;
 
-  padding: 20vh ${pxToRem(60)};
+  padding: 22vh ${pxToRem(60)};
   margin: 0 auto;
 
   @media (max-width: 768px) {
