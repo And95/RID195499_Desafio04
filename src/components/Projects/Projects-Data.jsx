@@ -1,51 +1,58 @@
-import mockPageWeb from "../../assets/mock-page-web.png";
+// import mockPageWeb from "../../assets/mock-page-web.png";
+
+import { project1,
+         project2,
+         project3,
+         project4,
+         project5,
+         project6 } from "../../assets/projects";
 
 const ProjectsData = [
   {
     id: 1,
-    title: "Projeto 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: mockPageWeb,
-    link: "#",
+    title: "Project Sales Dashboard",
+    description: "Projeto desenvolvido com base no design proposto pelo curso da Escola DNC.",
+    image: project1,
+    link: "https://pj-salesdashboardbyag.vercel.app/cadastro",
   },
   {
     id: 2,
-    title: "Projeto 2",
+    title: "Project Architecture",
     description:
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: mockPageWeb,
-    link: "#",
+      "Projeto desenvolvido com base no design proposto pelo curso da Escola DNC.",
+    image: project2,
+    link: "https://pj-architecturebyag.vercel.app",
   },
   {
     id: 3,
-    title: "Projeto 3",
-    description: "Ut enim ad minim veniam quis nostrud exercitation ullamco.",
-    image: mockPageWeb,
-    link: "#",
+    title: "Project Bikcraft",
+    description: "Projeto desenvolvido com base no design proposto pelo curso da Origamid.",
+    image: project3,
+    link: "https://pj-bikcraftorigamidbyag.vercel.app",
   },
   {
     id: 4,
-    title: "Projeto 4",
+    title: "Project Responsive",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-    image: mockPageWeb,
-    link: "#",
+      "Projeto desenvolvido com base no design proposto pelo curso da Escola DNC.",
+    image: project4,
+    link: "https://pj-responsivenesscoursebyag.netlify.app",
   },
   {
     id: 5,
-    title: "Projeto 5",
+    title: "Project Blog Responsivo",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-    image: mockPageWeb,
-    link: "#",
+      "Projeto desenvolvido com base no design proposto pelo curso da Escola DNC.",
+    image: project5,
+    link: "https://pj-blogresponsivobyag.netlify.app",
   },
   {
     id: 6,
-    title: "Projeto 6",
+    title: "Project Task Manager",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-    image: mockPageWeb,
-    link: "#",
+      "Projeto desenvolvido com base no design proposto pelo curso da Escola DNC.",
+    image: project6,
+    link: "https://pj-taskmanagerjsbyag.netlify.app",
   },
 ];
 

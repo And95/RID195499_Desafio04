@@ -8,13 +8,13 @@ export const HeroContainer = styled.section`
   justify-content: left;
   align-items: left;
   gap: ${pxToRem(32)};
-
+  
   background-image: url(${heroBg});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  padding: 22vh ${pxToRem(60)};
+  padding: 30vh ${pxToRem(60)};
   margin: 0 auto;
 
   @media (max-width: 768px) {

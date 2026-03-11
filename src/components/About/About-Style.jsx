@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { pxToRem } from "../../utils/pxToRem";
 
+// padding: ${pxToRem(20)} ${pxToRem(60)};
 export const AboutContainer = styled.section`
-  padding: ${pxToRem(20)} ${pxToRem(60)};
+  padding: ${pxToRem(80)} ${pxToRem(60)};
   max-width: 100%;
   margin: 0 auto;
 `;

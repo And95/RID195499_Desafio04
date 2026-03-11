@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-size: ${pxToRem(16)};
+        scroll-behavior: smooth;
     }
 
     h1, h2, ul, li, p, a {

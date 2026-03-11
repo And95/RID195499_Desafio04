@@ -1,10 +1,23 @@
 import styled from "styled-components";
-
+import { media } from "../../styles/media";
 import { pxToRem } from "../../utils/pxToRem";
+
+// padding: ${pxToRem(120)} ${pxToRem(60)};
+export const ProjectContainer = styled.section`
+  padding: ${pxToRem(20)} ${pxToRem(60)};
+
+  ${media.tablet`
+    padding: ${pxToRem(80)} ${pxToRem(24)};
+  `}
+
+  ${media.mobile`
+    padding: ${pxToRem(60)} ${pxToRem(16)};
+  `}
+`;
 
 export const Section = styled.section`
   background: #0b1728;
-  padding: ${pxToRem(60)} ${pxToRem(80)};
+  padding: ${pxToRem(60)} auto;
   margin: ${pxToRem(60)} auto;
 `;
 
@@ -15,6 +28,7 @@ export const Title = styled.h2`
   margin-bottom: ${pxToRem(60)};
 `;
 
+// grid-template-columns: repeat(auto-fit, minmax(${pxToRem(280)}, 1fr));
 export const ProjectsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(${pxToRem(320)}, 1fr));
@@ -56,23 +70,4 @@ export const CardDescription = styled.p`
   font-size: ${pxToRem(14)};
   line-height: 1.6;
   margin-bottom: ${pxToRem(20)};
-`;
-
-export const Button = styled.a`
-  display: inline-block;
-  padding: ${pxToRem(10)} ${pxToRem(20)};
-
-  border-radius: ${pxToRem(20)};
-
-  background: linear-gradient(90deg, #7b2ff7, #00c6ff);
-
-  color: white;
-  font-size: ${pxToRem(14)};
-  text-decoration: none;
-
-  transition: 0.3s;
-
-  &:hover {
-    opacity: 0.8;
-  }
 `;

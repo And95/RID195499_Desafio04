@@ -4,7 +4,7 @@ import { Button } from "../Style-Button"
 
 export function Hero(){
     return(
-        <HeroContainer>
+        <HeroContainer id="technologies">
             <Title> Olá, eu sou <Name>André Gonzaga</Name>
             <br />
             <Role>Engenheiro de Software</Role>
