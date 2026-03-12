@@ -7,10 +7,10 @@ import Linkedin from "../../assets/size-32-linkedin.svg";
 
 // styles
 import { HeaderContainer, NavLink } from "./Header-Style";
-import { HamburgerButton, MobileMenu, Overlay } from "../../styles";
+import { HamburgerButton, MobileMenu, Overlay } from "../../styles/mobileButton";
 
 // utils
-import { pxToRem } from "../../utils/pxToRem";
+import { pxToRem } from "./../../utils/pxToRem";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

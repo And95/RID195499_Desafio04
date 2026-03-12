@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { pxToRem } from "../../utils/pxToRem";
+import { pxToRem } from "../utils/pxToRem";
 
 export const HamburgerButton = styled.button`
   display: none;
@@ -24,7 +24,7 @@ export const HamburgerButton = styled.button`
   }
 `;
 
-export const MobileMenu = styled.nav<{ open: boolean }>`
+export const MobileMenu = styled.nav`
   position: fixed;
   top: 0;
   right: 0;
@@ -66,7 +66,7 @@ export const MobileMenu = styled.nav<{ open: boolean }>`
   }
 `;
 
-export const Overlay = styled.div<{ open: boolean }>`
+export const Overlay = styled.div`
   position: fixed;
   inset: 0;
 
