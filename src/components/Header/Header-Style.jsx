@@ -4,24 +4,40 @@ import { pxToRem } from "../../utils/pxToRem";
 
 export const HeaderContainer = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 
   width: 100%;
-  margin: 0 auto;
+  box-sizing: border-box;
 
   padding: ${pxToRem(20)} ${pxToRem(24)};
   font-size: ${pxToRem(20)};
 
-  ${media.tablet`
-    padding: ${pxToRem(20)} ${pxToRem(48)};
-  `}
-
   ${media.desktop`
+    justify-content: space-between;
     padding: ${pxToRem(24)} ${pxToRem(100)};
-    font-size: ${pxToRem(24)};
   `}
 `;
+
+export const DesktopNav = styled.ul`
+  display: none;
+
+  ${media.desktop`
+    display: flex;
+    gap: ${pxToRem(48)};
+    align-items: center;
+  `}
+`
+
+export const DesktopIcons = styled.ul`
+  display: none;
+
+  ${media.desktop`
+    display: flex;
+    gap: ${pxToRem(20)};
+    align-items: center;
+  `}
+`
 
 export const NavLink = styled.a`
   font-weight: 500;
