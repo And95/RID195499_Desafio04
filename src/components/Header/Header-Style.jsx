@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { media } from "../../styles/media";
 import { pxToRem } from "../../utils/pxToRem";
 
 export const HeaderContainer = styled.header`
@@ -12,6 +12,15 @@ export const HeaderContainer = styled.header`
   margin: 0 auto;
 
   font-size: ${pxToRem(24)}
+
+  ${media.tablet`
+    padding: ${pxToRem(24)} ${pxToRem(8)};
+  `}
+
+  ${media.mobile`
+    padding: ${pxToRem(24)} ${pxToRem(6)};
+  `}
+
 `;
 
 export const NavLink = styled.a`
