@@ -6,11 +6,11 @@ export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: ${pxToRem(24)};
+  gap: ${pxToRem(48)};
 
-  padding: ${pxToRem(40)} ${pxToRem(16)};
+  padding: ${pxToRem(32)} ${pxToRem(16)};
   max-width: ${pxToRem(1200)};
-  margin: ${pxToRem(80)} auto 0;
+  margin: ${pxToRem(48)} auto;
 
   font-size: ${pxToRem(16)};
   text-align: center;
@@ -18,14 +18,63 @@ export const FooterContainer = styled.footer`
   ${media.tablet`
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     padding: ${pxToRem(50)} ${pxToRem(40)};
-    font-size: ${pxToRem(18)};
+    text-align: left;
   `}
 
   ${media.desktop`
     padding: ${pxToRem(60)} ${pxToRem(60)};
     margin-top: ${pxToRem(120)};
     font-size: ${pxToRem(20)};
+  `}
+`;
+
+export const Contact = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: ${pxToRem(24)};
+
+  h2 {
+    font-size: ${pxToRem(24)};
+    margin-bottom: ${pxToRem(4)};
+  }
+
+  ${media.desktop`
+    flex-direction: row;
+    gap: ${pxToRem(64)};
+    h2 {
+      font-size: ${pxToRem(24)};
+    }
+  `}
+`;
+
+export const Social = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  gap: ${pxToRem(32)};
+  align-items: center;
+
+  img {
+    width: ${pxToRem(32)};
+    transition: transform 0.2s ease;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+
+  ${media.desktop`
+    img {
+      width: ${pxToRem(64)};
+    }
   `}
 `;
 
