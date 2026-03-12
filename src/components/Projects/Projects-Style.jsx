@@ -2,46 +2,60 @@ import styled from "styled-components";
 import { media } from "../../styles/media";
 import { pxToRem } from "../../utils/pxToRem";
 
-// padding: ${pxToRem(120)} ${pxToRem(60)};
 export const ProjectContainer = styled.section`
-  padding: ${pxToRem(20)} ${pxToRem(60)};
+  padding: ${pxToRem(60)} ${pxToRem(16)};
 
   ${media.tablet`
     padding: ${pxToRem(80)} ${pxToRem(24)};
   `}
 
-  ${media.mobile`
-    padding: ${pxToRem(60)} ${pxToRem(16)};
+  ${media.desktop`
+    padding: ${pxToRem(100)} ${pxToRem(60)};
   `}
 `;
 
 export const Section = styled.section`
   background: #0b1728;
-  padding: ${pxToRem(60)} auto;
+  padding: ${pxToRem(60)} 0;
   margin: ${pxToRem(60)} auto;
 `;
 
 export const Title = styled.h2`
-  font-size: ${pxToRem(56)};
+  font-size: ${pxToRem(32)};
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: ${pxToRem(60)};
+  margin-bottom: ${pxToRem(40)};
+
+  ${media.tablet`
+    font-size: ${pxToRem(44)};
+  `}
+
+  ${media.desktop`
+    font-size: ${pxToRem(56)};
+    margin-bottom: ${pxToRem(60)};
+  `}
 `;
 
-// grid-template-columns: repeat(auto-fit, minmax(${pxToRem(280)}, 1fr));
 export const ProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(${pxToRem(320)}, 1fr));
-  gap: ${pxToRem(80)};
-  margin-left: ${pxToRem(24)};
+  grid-template-columns: repeat(auto-fit, minmax(${pxToRem(260)}, 1fr));
+  gap: ${pxToRem(32)};
+
+  ${media.tablet`
+    gap: ${pxToRem(48)};
+  `}
+
+  ${media.desktop`
+    grid-template-columns: repeat(auto-fit, minmax(${pxToRem(320)}, 1fr));
+    gap: ${pxToRem(64)};
+  `}
 `;
 
 export const Card = styled.div`
   background: #0f1c2e;
-  border-radius: ${pxToRem(20)};
   padding: ${pxToRem(20)};
   border: 3px solid rgba(137, 137, 137, 0.97);
-  border-radius: ${pxToRem(20)} ${pxToRem(0)} ${pxToRem(20)} ${pxToRem(0)};
+  border-radius: ${pxToRem(20)} 0 ${pxToRem(20)} 0;
 
   box-shadow: 0 ${pxToRem(10)} ${pxToRem(30)} rgba(0, 0, 0, 0.6);
 
@@ -61,8 +75,12 @@ export const CardImage = styled.img`
 
 export const CardTitle = styled.h3`
   color: white;
-  font-size: ${pxToRem(20)};
+  font-size: ${pxToRem(18)};
   margin-bottom: ${pxToRem(12)};
+
+  ${media.tablet`
+    font-size: ${pxToRem(20)};
+  `}
 `;
 
 export const CardDescription = styled.p`
