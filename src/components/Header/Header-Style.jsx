@@ -7,20 +7,20 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  padding: ${pxToRem(24)} ${pxToRem(100)};
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 
-  font-size: ${pxToRem(24)}
+  padding: ${pxToRem(20)} ${pxToRem(24)};
+  font-size: ${pxToRem(20)};
 
   ${media.tablet`
-    padding: ${pxToRem(24)} ${pxToRem(8)};
+    padding: ${pxToRem(20)} ${pxToRem(48)};
   `}
 
-  ${media.mobile`
-    padding: ${pxToRem(24)} ${pxToRem(6)};
+  ${media.desktop`
+    padding: ${pxToRem(24)} ${pxToRem(100)};
+    font-size: ${pxToRem(24)};
   `}
-
 `;
 
 export const NavLink = styled.a`
