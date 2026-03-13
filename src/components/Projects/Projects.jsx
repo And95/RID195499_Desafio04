@@ -41,8 +41,8 @@ export function Projects() {
   };
 
   return (
-    <ProjectContainer id="projects">
-      <Section>
+    <ProjectContainer>
+      <Section id="projects">
         <Title>Projetos</Title>
 
         <ProjectsGrid>
