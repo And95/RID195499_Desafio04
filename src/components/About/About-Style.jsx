@@ -3,8 +3,7 @@ import { pxToRem } from "../../utils/pxToRem";
 import { media } from "../../styles/media";
 
 export const AboutContainer = styled.section`
-  padding: ${pxToRem(64)} ${pxToRem(16)};
-  margin: 0 auto;
+  padding: ${pxToRem(80)} ${pxToRem(16)};
   max-width: ${pxToRem(1200)};
 
   ${media.tablet`
@@ -18,7 +17,7 @@ export const AboutContainer = styled.section`
 
 export const Title = styled.h1`
   font-size: ${pxToRem(34)};
-  margin-bottom: ${pxToRem(40)};
+  margin-bottom: ${pxToRem(32)};
 
   ${media.tablet`
     font-size: ${pxToRem(44)};
@@ -34,7 +33,7 @@ export const Timeline = styled.div`
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  gap: ${pxToRem(40)};
+  gap: ${pxToRem(16)};
   text-align: center;
 
   ${media.tablet`
@@ -55,7 +54,7 @@ export const Line = styled.div`
     top: ${pxToRem(7)};
     left: 50%;
     transform: translateX(-50%);
-    width: 75%;
+    width: 78%;
     height: ${pxToRem(6)};
     background: #fff;
   `}
@@ -66,15 +65,15 @@ export const Item = styled.div`
 `;
 
 export const Dot = styled.div`
-  width: ${pxToRem(16)};
-  height: ${pxToRem(16)};
-  border-radius: 50%;
-  background: #fff;
-  margin: 0 auto ${pxToRem(16)};
+  display: none;
 
   ${media.desktop`
-    width: ${pxToRem(20)};
-    height: ${pxToRem(20)};
+    display: block;
+    width: ${pxToRem(24)};
+    height: ${pxToRem(24)};
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto ${pxToRem(16)};
   `}
 `;
 
