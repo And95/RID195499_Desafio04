@@ -15,18 +15,14 @@ export const FooterContainer = styled.footer`
   font-size: ${pxToRem(16)};
   text-align: center;
 
-  ${media.tablet`
+  ${media.laptop`
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: ${pxToRem(50)} ${pxToRem(40)};
-    text-align: left;
-  `}
-
-  ${media.desktop`
     padding: ${pxToRem(60)} ${pxToRem(60)};
     margin-top: ${pxToRem(120)};
     font-size: ${pxToRem(20)};
+    text-align: left;
   `}
 `;
 
@@ -44,9 +40,10 @@ export const Contact = styled.ul`
     margin-bottom: ${pxToRem(4)};
   }
 
-  ${media.desktop`
+  ${media.laptop`
     flex-direction: row;
     gap: ${pxToRem(64)};
+
     h2 {
       font-size: ${pxToRem(24)};
     }
@@ -71,7 +68,7 @@ export const Social = styled.ul`
     transform: scale(1.1);
   }
 
-  ${media.desktop`
+  ${media.laptop`
     img {
       width: ${pxToRem(64)};
     }
@@ -91,7 +88,7 @@ export const NavLink = styled.a`
     font-size: ${pxToRem(20)};
   `}
 
-  ${media.desktop`
+  ${media.laptop`
     font-size: ${pxToRem(22)};
   `}
 `;
