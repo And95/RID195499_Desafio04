@@ -3,7 +3,7 @@ import { media } from "../../styles/media";
 import { pxToRem } from "../../utils/pxToRem";
 
 export const ProjectContainer = styled.section`
-  padding: ${pxToRem(60)} ${pxToRem(16)};
+  padding: ${pxToRem(60)} ${pxToRem(16)} 0 ${pxToRem(16)};
 
   ${media.tablet`
     padding: ${pxToRem(80)} ${pxToRem(24)};
@@ -16,7 +16,7 @@ export const ProjectContainer = styled.section`
 
 export const Section = styled.section`
   background: #0b1728;
-  padding: ${pxToRem(32)} 0;
+  padding-top: ${pxToRem(32)};
 `;
 
 export const Title = styled.h2`

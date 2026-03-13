@@ -3,7 +3,7 @@ import { pxToRem } from "../../utils/pxToRem";
 import { media } from "../../styles/media";
 
 export const AboutContainer = styled.section`
-  padding: ${pxToRem(60)} ${pxToRem(16)};
+  padding: ${pxToRem(64)} ${pxToRem(16)};
   margin: 0 auto;
   max-width: ${pxToRem(1200)};
 
