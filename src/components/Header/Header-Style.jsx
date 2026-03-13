@@ -13,8 +13,12 @@ export const HeaderContainer = styled.header`
   padding: ${pxToRem(20)} ${pxToRem(24)};
   font-size: ${pxToRem(20)};
 
-  ${media.desktop`
+  ${media.tablet`
     justify-content: space-between;
+    padding: ${pxToRem(24)} ${pxToRem(40)};
+  `}
+
+  ${media.desktop`
     padding: ${pxToRem(24)} ${pxToRem(100)};
   `}
 `;
@@ -22,22 +26,36 @@ export const HeaderContainer = styled.header`
 export const DesktopNav = styled.ul`
   display: none;
 
-  ${media.desktop`
+  ${media.tablet`
     display: flex;
-    gap: ${pxToRem(48)};
+    gap: ${pxToRem(24)};
     align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   `}
-`
+
+  ${media.desktop`
+    gap: ${pxToRem(48)};
+  `}
+`;
 
 export const DesktopIcons = styled.ul`
   display: none;
 
-  ${media.desktop`
+  ${media.tablet`
     display: flex;
-    gap: ${pxToRem(20)};
+    gap: ${pxToRem(16)};
     align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   `}
-`
+
+  ${media.desktop`
+    gap: ${pxToRem(20)};
+  `}
+`;
 
 export const NavLink = styled.a`
   font-weight: 500;
