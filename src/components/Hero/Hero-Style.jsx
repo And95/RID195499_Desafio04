@@ -41,9 +41,18 @@ export const Title = styled.h1`
 `;
 
 export const Name = styled.span`
+  display: inline-block;
   background: linear-gradient(90deg, #7b61ff, #2dd4bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  ${media.tablet`
+    display: inline;
+  `}
+
+  ${media.desktop`
+    font-size: inline;
+  `}
 `;
 
 export const Role = styled.span`
