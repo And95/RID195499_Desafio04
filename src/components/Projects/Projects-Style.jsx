@@ -17,6 +17,7 @@ export const ProjectContainer = styled.section`
 export const Section = styled.section`
   background: #0b1728;
   padding-top: ${pxToRem(32)};
+  scroll-margin-top: ${pxToRem(20)};
 `;
 
 export const Title = styled.h2`
