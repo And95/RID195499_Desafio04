@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   Section,
@@ -18,11 +18,24 @@ import ProjectsData from "../Projects/Projects-Data";
 
 export function Projects() {
   const [page, setPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
 
   const projectsPerPage = 3;
   const start = (page - 1) * projectsPerPage;
   const visibleProjects = ProjectsData.slice(start, start + projectsPerPage);
   const totalPages = Math.ceil(ProjectsData.length / projectsPerPage);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handlePageChange = (newPage) => {
     setPage(newPage);
@@ -40,13 +53,15 @@ export function Projects() {
     }
   };
 
+  const projectsToRender = isMobile ? visibleProjects : ProjectsData;
+
   return (
     <ProjectContainer>
       <Section id="projects">
         <Title>Projetos</Title>
 
         <ProjectsGrid>
-          {visibleProjects.map((project) => (
+          {projectsToRender.map((project) => (
             <Card key={project.id}>
               <CardImage src={project.image} alt={project.title} />
               <CardTitle>{project.title}</CardTitle>
@@ -64,17 +79,19 @@ export function Projects() {
           ))}
         </ProjectsGrid>
 
-        <PaginationTabs>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <PaginationButton
-              key={index}
-              onClick={() => handlePageChange(index + 1)}
-              className={page === index + 1 ? "active" : ""}
-            >
-              {index + 1}
-            </PaginationButton>
-          ))}
-        </PaginationTabs>
+        {isMobile && (
+          <PaginationTabs>
+            {Array.from({ length: totalPages }, (_, index) => (
+              <PaginationButton
+                key={index}
+                onClick={() => handlePageChange(index + 1)}
+                className={page === index + 1 ? "active" : ""}
+              >
+                {index + 1}
+              </PaginationButton>
+            ))}
+          </PaginationTabs>
+        )}
       </Section>
     </ProjectContainer>
   );

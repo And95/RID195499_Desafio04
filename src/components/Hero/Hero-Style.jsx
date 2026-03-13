@@ -80,9 +80,11 @@ export const Paragraph = styled.p`
 
   ${media.tablet`
     font-size: ${pxToRem(18)};
-  `}
+    margin-left: ${pxToRem(32)};
+    `}
 
   ${media.desktop`
-    font-size: ${pxToRem(20)};
+      font-size: ${pxToRem(20)};
+      margin-left: ${pxToRem(32)};
   `}
 `;
