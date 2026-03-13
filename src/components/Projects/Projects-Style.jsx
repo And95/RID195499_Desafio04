@@ -35,12 +35,14 @@ export const Title = styled.h2`
   `}
 `;
 
+//grid-template-columns: repeat(auto-fit, minmax(${pxToRem(260)}, 1fr));
 export const ProjectsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(${pxToRem(260)}, 1fr));
-  gap: ${pxToRem(32)};
+  grid-template-columns: 1fr;
+  gap: ${pxToRem(20)};
 
   ${media.tablet`
+    grid-template-columns: repeat(auto-fit, minmax(${pxToRem(260)}, 1fr));
     gap: ${pxToRem(48)};
   `}
 
@@ -52,18 +54,20 @@ export const ProjectsGrid = styled.div`
 
 export const Card = styled.div`
   background: #0f1c2e;
-  padding: ${pxToRem(20)};
+  padding: ${pxToRem(16)};
   border: 3px solid rgba(137, 137, 137, 0.97);
   border-radius: ${pxToRem(20)} 0 ${pxToRem(20)} 0;
-
   box-shadow: 0 ${pxToRem(10)} ${pxToRem(30)} rgba(0, 0, 0, 0.6);
-
   transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-6px);
     box-shadow: 0 ${pxToRem(15)} ${pxToRem(40)} rgba(0, 0, 0, 0.8);
   }
+
+  ${media.tablet`
+    padding: ${pxToRem(20)};
+  `}
 `;
 
 export const CardImage = styled.img`
@@ -87,4 +91,38 @@ export const CardDescription = styled.p`
   font-size: ${pxToRem(14)};
   line-height: 1.6;
   margin-bottom: ${pxToRem(20)};
+`;
+
+export const PaginationTabs = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: ${pxToRem(10)};
+  margin-top: ${pxToRem(24)};
+
+  ${media.tablet`
+    display: none;
+  `}
+`;
+
+export const PaginationButton = styled.button`
+  border: none;
+  padding: ${pxToRem(10)} ${pxToRem(16)};
+  border-radius: ${pxToRem(12)};
+  background: #1f1f1f;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: ${pxToRem(14)};
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #00bcd4;
+    color: #000;
+    transform: translateY(-2px);
+  }
+
+  &.active {
+    background: #00bcd4;
+    color: #000;
+  }
 `;
