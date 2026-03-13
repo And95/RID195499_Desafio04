@@ -10,7 +10,7 @@ export const FooterContainer = styled.footer`
 
   padding: ${pxToRem(32)} ${pxToRem(16)};
   max-width: ${pxToRem(1200)};
-  margin: ${pxToRem(48)} auto;
+  margin-top: ${pxToRem(48)};
 
   font-size: ${pxToRem(16)};
   text-align: center;
