@@ -38,15 +38,15 @@ export const MobileMenu = styled.nav`
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  padding-top: ${pxToRem(80)};
 
-  transform: ${({ open }) =>
-    open ? "translateX(0)" : "translateX(100%)"};
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
 
   transition: transform 0.3s ease;
 
-  box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
 
   gap: ${pxToRem(32)};
 
@@ -65,7 +65,7 @@ export const Overlay = styled.div`
   position: fixed;
   inset: 0;
 
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
 
   opacity: ${({ open }) => (open ? 1 : 0)};
