@@ -44,7 +44,7 @@ export function About() {
         <Line $visible={isVisible} />
 
         {timeline.map((item, index) => (
-          <Item key={item.year} $visible={isVisible} $delay={index * 0.22}>
+          <Item key={item.year} $visible={isVisible} $delay={index * 0.35}>
             <Dot $visible={isVisible} $delay={index * 0.22} />
             <Year>{item.year}</Year>
             <Text>{item.text}</Text>
