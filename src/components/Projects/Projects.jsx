@@ -30,7 +30,7 @@ export function Projects() {
     const section = document.getElementById("projects");
 
     if (section) {
-      const offset = 80; // ajuste se sua navbar for maior/menor
+      const offset = 20;
       const top = section.getBoundingClientRect().top + window.scrollY - offset;
 
       window.scrollTo({
