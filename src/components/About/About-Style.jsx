@@ -67,13 +67,17 @@ export const Item = styled.div`
   position: relative;
   opacity: ${({ $visible }) => ($visible ? 1 : 0)};
   transform: ${({ $visible }) =>
-    $visible ? "translateY(0)" : `translateY(${pxToRem(24)})`};
+    $visible ? "translateY(0)" : `translateY(${pxToRem(36)})`};
+  filter: ${({ $visible }) => ($visible ? "blur(0px)" : "blur(4px)")};
 
   transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+    opacity 1.1s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.1s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1.1s cubic-bezier(0.22, 1, 0.36, 1);
 
   transition-delay: ${({ $delay }) => `${$delay}s`};
+
+  will-change: opacity, transform, filter;
 `;
 
 export const Dot = styled.div`
