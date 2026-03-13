@@ -5,6 +5,7 @@ import { media } from "../../styles/media";
 export const AboutContainer = styled.section`
   padding: ${pxToRem(80)} ${pxToRem(16)};
   max-width: ${pxToRem(1200)};
+  margin: 0 auto;
 
   ${media.tablet`
     padding: ${pxToRem(80)} ${pxToRem(40)};
@@ -53,15 +54,26 @@ export const Line = styled.div`
     position: absolute;
     top: ${pxToRem(7)};
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scaleX(${({ $visible }) => ($visible ? 1 : 0)});
+    transform-origin: center;
     width: 78%;
     height: ${pxToRem(6)};
     background: #fff;
+    transition: transform 0.8s ease;
   `}
 `;
 
 export const Item = styled.div`
   position: relative;
+  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
+  transform: ${({ $visible }) =>
+    $visible ? "translateY(0)" : `translateY(${pxToRem(24)})`};
+
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+
+  transition-delay: ${({ $delay }) => `${$delay}s`};
 `;
 
 export const Dot = styled.div`
@@ -74,6 +86,12 @@ export const Dot = styled.div`
     border-radius: 50%;
     background: #fff;
     margin: 0 auto ${pxToRem(16)};
+    transform: scale(${({ $visible }) => ($visible ? 1 : 0.6)});
+    opacity: ${({ $visible }) => ($visible ? 1 : 0)};
+    transition:
+      transform 0.4s ease,
+      opacity 0.4s ease;
+    transition-delay: ${({ $delay }) => `${$delay + 0.1}s`};
   `}
 `;
 
