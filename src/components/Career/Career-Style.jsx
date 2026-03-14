@@ -67,3 +67,53 @@ export const ChartContainer = styled.div`
     max-width: 100%;
   }
 `;
+
+export const StatsContainer = styled.div`
+  margin-top: ${pxToRem(18)};
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: ${pxToRem(16)};
+
+  ${media.tablet`
+    grid-template-columns: repeat(3, 1fr);
+  `}
+`;
+
+export const StatCard = styled.div`
+  padding: ${pxToRem(28)};
+  border-radius: ${pxToRem(18)};
+  text-align: center;
+
+  background: #050816;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+
+  box-shadow: 0 0 ${pxToRem(30)} rgba(34, 211, 238, 0.08);
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 ${pxToRem(40)} rgba(34, 211, 238, 0.2);
+  }
+`;
+
+export const StatNumber = styled.div`
+  font-size: ${pxToRem(40)};
+  font-weight: 700;
+  color: #22d3ee;
+  margin-bottom: ${pxToRem(8)};
+
+  ${media.tablet`
+    font-size: ${pxToRem(48)};
+  `}
+`;
+
+export const StatLabel = styled.div`
+  font-size: ${pxToRem(14)};
+  color: #cbd5f5;
+  line-height: 1.4;
+
+  ${media.tablet`
+    font-size: ${pxToRem(16)};
+  `}
+`;

@@ -15,6 +15,10 @@ import {
   Title,
   ChartWrapper,
   ChartContainer,
+  StatsContainer,
+  StatCard,
+  StatNumber,
+  StatLabel,
 } from "./Career-Style";
 
 ChartJS.register(
@@ -106,6 +110,40 @@ export function Career() {
           <Line data={data} options={options} />
         </ChartContainer>
       </ChartWrapper>
+      <StatsContainer>
+        <StatCard>
+          <StatNumber>7</StatNumber>
+          <StatLabel>Cargos na área de TI</StatLabel>
+        </StatCard>
+
+        <StatCard>
+          <StatNumber>6y 4m</StatNumber>
+          <StatLabel>Evolução de carreira (2015–2022)</StatLabel>
+        </StatCard>
+
+        <StatCard>
+          <StatNumber>8y 8m</StatNumber>
+          <StatLabel>Experiência total em tecnologia</StatLabel>
+        </StatCard>
+
+        <StatCard>
+          <StatNumber>+4</StatNumber>
+          <StatLabel>Experiência em desenvolvimento de software</StatLabel>
+        </StatCard>
+
+        <StatCard>
+          <StatNumber>
+            Suporte
+            <br />→ Dev
+          </StatNumber>
+          <StatLabel>Evolução profissional</StatLabel>
+        </StatCard>
+
+        <StatCard>
+          <StatNumber>100%</StatNumber>
+          <StatLabel>Atuação em tecnologia</StatLabel>
+        </StatCard>
+      </StatsContainer>
     </CareerContainer>
   );
 }
