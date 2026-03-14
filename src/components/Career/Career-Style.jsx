@@ -74,6 +74,10 @@ export const StatsContainer = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: ${pxToRem(16)};
 
+  ${media.mobile`
+    grid-template-columns: 1fr;
+  `}
+
   ${media.tablet`
     grid-template-columns: repeat(3, 1fr);
   `}
