@@ -56,9 +56,9 @@ export function Projects() {
   const projectsToRender = isMobile ? visibleProjects : ProjectsData;
 
   return (
-    <ProjectContainer>
+    <ProjectContainer id="projects">
       <Title>Projetos</Title>
-      <Section id="projects">
+      <Section>
         <ProjectsGrid>
           {projectsToRender.map((project) => (
             <Card key={project.id}>
