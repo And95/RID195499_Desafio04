@@ -71,14 +71,11 @@ export const ChartContainer = styled.div`
 export const StatsContainer = styled.div`
   margin-top: ${pxToRem(18)};
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: ${pxToRem(16)};
-
-  ${media.mobile`
-    grid-template-columns: 1fr;
-  `}
+  grid-template-columns: repeat(auto-fit, minmax(${pxToRem(200)}, 1fr));
+  gap: ${pxToRem(20)};
 
   ${media.tablet`
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-template-columns: repeat(3, 1fr);
   `}
 `;
