@@ -103,6 +103,9 @@ export function Header() {
             <NavLink href="#about" onClick={closeMenu}>
               Sobre mim
             </NavLink>
+            <NavLink href="#career" onClick={closeMenu}>
+              Minha Jornada
+            </NavLink>
           </MobileMenu>
         </>
       )}

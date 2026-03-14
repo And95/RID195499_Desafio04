@@ -9,6 +9,10 @@ export const ProjectContainer = styled.section`
     padding: ${pxToRem(80)} ${pxToRem(24)};
   `}
 
+  ${media.laptop`
+    padding: ${pxToRem(80)} ${pxToRem(38)};
+  `}
+
   ${media.desktop`
     padding: ${pxToRem(100)} ${pxToRem(60)};
   `}
@@ -17,7 +21,14 @@ export const ProjectContainer = styled.section`
 //scroll-margin-top: ${pxToRem(20)};
 export const Section = styled.section`
   background: #0b1728;
-  padding-top: ${pxToRem(32)};
+
+  ${media.laptop`
+    padding: ${pxToRem(32)} ${pxToRem(80)} 0 ${pxToRem(80)};
+  `}
+
+  ${media.desktop`
+    padding: ${pxToRem(32)} ${pxToRem(80)} 0 ${pxToRem(80)};
+  `}
 `;
 
 export const Title = styled.h2`

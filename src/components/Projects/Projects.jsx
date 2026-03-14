@@ -57,9 +57,8 @@ export function Projects() {
 
   return (
     <ProjectContainer>
+      <Title>Projetos</Title>
       <Section id="projects">
-        <Title>Projetos</Title>
-
         <ProjectsGrid>
           {projectsToRender.map((project) => (
             <Card key={project.id}>
