@@ -39,7 +39,11 @@ export function Career() {
         backgroundColor: "rgba(34,211,238,0.2)",
         borderWidth: 3,
         tension: 0.4,
+
         pointRadius: 6,
+        pointHoverRadius: 10,
+        pointHitRadius: 30, // aumenta área de toque
+
         pointBackgroundColor: "#22d3ee",
         pointBorderColor: "#0ea5e9",
       },
@@ -84,6 +88,12 @@ export function Career() {
       y: {
         display: false,
       },
+    },
+
+    interaction: {
+      mode: "nearest",
+      axis: "x",
+      intersect: false,
     },
   };
 
