@@ -5,7 +5,7 @@ export const timeline = [
   },
   {
     year: "2019",
-    text: "Atuações como analista de suporte no Projeto Unimed - Sistemas e Suporte pela MACROCOOP."
+    text: "Atuações como analista de suporte em TI no Projeto Unimed - Sistemas e Suporte pela MACROCOOP."
   },
   {
     year: "2020",
