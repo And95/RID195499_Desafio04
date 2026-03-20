@@ -1,5 +1,4 @@
 # React + Vite
-## Template 02
 
 project_portifolio_model_03
 
